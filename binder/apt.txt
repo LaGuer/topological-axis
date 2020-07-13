@@ -1,0 +1,16 @@
+texlive-latex-base
+texlive-latex-extra
+texlive-fonts-extra
+texlive-fonts-recommended
+texlive-latex-recommended
+texlive-generic-recommended
+cm-super
+texlive-science
+texlive-xetex
+texlive-luatex
+fonts-lato
+dvipng
+xzdec
+zip
+unzip
+sudo
