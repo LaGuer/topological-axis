@@ -12,6 +12,7 @@ fonts-lato
 dvipng
 pdf2svg
 imagemagick
+inkscape 
 xzdec
 zip
 unzip
