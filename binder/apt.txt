@@ -10,6 +10,8 @@ texlive-xetex
 texlive-luatex
 fonts-lato
 dvipng
+pdf2svg
+imagemagick
 xzdec
 zip
 unzip
