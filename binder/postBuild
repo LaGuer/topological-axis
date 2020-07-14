@@ -1,1 +1,4 @@
 jupyter labextension install @jupyterlab/latex@0.6.1
+wget https://www.imagemagick.org/download/ImageMagick.tar.gz
+tar xf ImageMagick.tar.gz
+cd ImageMagick-7*
