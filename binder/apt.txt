@@ -17,3 +17,5 @@ xzdec
 zip
 unzip
 sudo
+rpm
+yum
