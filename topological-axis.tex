@@ -1,4 +1,4 @@
-\documentclass[letter]{article}
+\documentclass[a4paper]{article}
 %\pgfplotsset{compat=1.12}
 %\usepackage{conference}
 \usepackage{latexsym}
@@ -14,6 +14,13 @@
 \usepackage{hyperref}
 \usepackage[varg]{txfonts}
 \usepackage[T1]{fontenc}                   % Font encoding
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
 %%%%%%
 %%%%%%
 \usetikzlibrary{patterns,arrows.meta,shapes,calc,angles,positioning,intersections,through,quotes,decorations.markings}
