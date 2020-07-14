@@ -1,8 +1,8 @@
 jupyter labextension install @jupyterlab/latex@0.6.1
 wget https://imagemagick.org/download/linux/CentOS/x86_64/ImageMagick-7.0.10-23.x86_64.rpm
 wget https://imagemagick.org/download/linux/CentOS/x86_64/ImageMagick-libs-7.0.10-23.x86_64.rpm
-rpm -Uvh ImageMagick-7.0.10-23.x86_64.rpm
-rpm -Uvh ImageMagick-libs-7.0.10-23.x86_64.rpm
+##rpm -Uvh ImageMagick-7.0.10-23.x86_64.rpm
+##rpm -Uvh ImageMagick-libs-7.0.10-23.x86_64.rpm
 #wget https://imagemagick.org/download/binaries/magick
 #chmod 777 magick
 # ./magick
