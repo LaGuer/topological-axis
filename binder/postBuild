@@ -2,10 +2,10 @@
 
 # run matplotlib once to generate the font cache
 python -c "import matplotlib as mpl; mpl.use('Agg'); import pylab as plt; fig, ax = plt.subplots(); fig.savefig('topological-axis.png')"
-nbconvert topological-axis.ipyynb --to pdf
+
 #test -e topological-axis.png && rm topological-axis.png
 jupyter labextension install @jupyterlab/latex@0.6.1
-nbconvert topological-axis.ipyynb --to pdf
+#nbconvert topological-axis.ipyynb --to pdf
 #wget https://imagemagick.org/download/linux/CentOS/x86_64/ImageMagick-7.0.10-23.x86_64.rpm
 #wget https://imagemagick.org/download/linux/CentOS/x86_64/ImageMagick-libs-7.0.10-23.x86_64.rpm
 ##rpm -Uvh ImageMagick-7.0.10-23.x86_64.rpm
