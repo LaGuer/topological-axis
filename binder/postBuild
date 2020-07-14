@@ -1,11 +1,11 @@
 jupyter labextension install @jupyterlab/latex@0.6.1
 wget https://imagemagick.org/download/binaries/magick
 chmod 777 magick
-./magick
-#wget https://www.imagemagick.org/download/ImageMagick.tar.gz
-#tar xf ImageMagick.tar.gz
-#cd ImageMagick-7*
-#./configure
-#make
+# ./magick
+# wget https://www.imagemagick.org/download/ImageMagick.tar.gz
+# tar xf ImageMagick.tar.gz
+# cd ImageMagick-7*
+# ./configure
+# make
 # sudo make install
 # sudo ldconfig /usr/local/lib
