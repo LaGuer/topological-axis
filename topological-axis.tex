@@ -37,10 +37,21 @@
 \begin{document}
 
 \begin{figure}
-\label{tab:9:table9}
+%\label{tab:9:table9}
 \centering
-\begin{tikzpicture}[scale=0.9, line cap=round,line join=round,>=triangle 
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 
 45,x=0.25cm,y=0.25cm]
+%\begin{axis}[%
+%width=\figurewidth,
+%height=\figureheight,
+%scale only axis,
+%xmin=1,
+%xmax=20,
+%ymin=0,
+%ymax=2,
+%title={caracteristics length follow the law $exp(2^{d/4})$, unit length: electron compton reduced wavelength: $\hbar m_ec=\lambdabar_e$}, 
+%legend style={draw=black,fill=white,legend cell align=left}
+%]
 %\draw[step=1cm,gray,very thin] (-31,-31) grid (31,31);
 \tkzDefPoint(-31.0,-31.0){A} %\tkzDefPoint(5.,3.43){B} \tkzDefPoint(5.,0.){C} \tkzDefPoint(31.0,31.0){Y}
 \tkzDefPoint(-28.0,-28.0){B}
@@ -68,8 +79,8 @@
 \coordinate (center) at (BICODON);
 %\tkzLabelPoints[below,color=green](BICODON)
 \tkzDrawPoints(BICODON)
-\draw [->] (-31.0,-31.0) node[left]{} -- (-31.,31.) node[right]{}; % scale Y
-\draw [->] (31.0,-31.0) node[left]{} -- (31.,31.) node[right]{}; % 
+\draw [->] (-31.0,-31.0) node[left]{} -- (-31.,34.) node[right]{}; % scale Y
+%\draw [->] (31.0,-31.0) node[left]{} -- (31.,31.) node[right]{}; % 
 \draw [->] (-31.0,-31.0) node[left]{} -- (31.8,-31.0) node[right]{}; % scale d
 \draw [->] (-31.0,-34.) node[left]{} -- (31.8,-34.) node[right]{};   % scale k
 \draw [->] (-34.0,-31.) node[left]{} -- (-34.,34.) node[right]{};   % scale Y'
@@ -78,21 +89,21 @@
 \draw [-,color=green,dashed] (-34.0,0.) node[left]{} -- (0.,0.) node[right]{};   % bicodon horizontal line
 \draw [-,color=red,dashed] (-34.0,31.) node[left]{} -- (31.,31.) node[right]{};   % Cosmos horizontal line
 %%% Blue Dashed Vertical lines
-\draw [-,color=blue,dashed] (-28.0,-32.) node[left]{} -- (-28.,-28.) node[right]{};   % String vertical line
-\draw [-,color=blue,dashed] (-20.0,-32.) node[left]{} -- (-20.,-20.) node[right]{};   % Gluon vertical line
-\draw [-,color=blue,dashed] (-12.0,-32.) node[left]{} -- (-12.,-12.) node[right]{};   % ATOM DIAMETER vertical line
-\draw [-,color=blue,dashed] (-10.0,-32.) node[left]{} -- (-10.,-10.) node[right]{};   % Kaon vertical line
-\draw [-,color=blue,dashed] (-4.0,-32.) node[left]{} -- (-4.,-4.) node[right]{};   % Half Mean Weak Boson vertical line
-\draw [-,color=blue,dashed] (-3.0,-32.) node[left]{} -- (-3.,-3.) node[right]{};   % Scalar Boson vertical line
-\draw [-,color=blue,dashed] (0.,-32.) node[left]{} -- (0.,0.) node[right]{};   % Bicodon vertical line
-\draw [-,color=blue,dashed] (4.1,-32.) node[left]{} -- (4.1,4.1) node[right]{};   % Thermal Photon vertical line
-\draw [-,color=blue,dashed] (12.1,-32.) node[left]{} -- (12.1,12.1) node[right]{};   % Boson X GUT vertical line
-\draw [-,color=blue,dashed] (16.,-32.) node[left]{} -- (16.,16.) node[right]{};   % Photon vertical line
-\draw [-,color=blue,dashed] (18.25,-32.) node[left]{} -- (18.25,18.25) node[right]{};   % Galaxy group vertical line
-\draw [-,color=blue,dashed] (20.0,-32.) node[left]{} -- (20.0,20.) node[right]{};   % Gravitonde vertical line
-\draw [-,color=blue,dashed] (28.0,-32.) node[left]{} -- (28.0,28.0) node[right]{};   % Super Period vertical line
-\draw [-,color=blue,dashed] (29.,-32.) node[left]{} -- (29.,29.0) node[right]{};   % Topon vertical line
-\draw [-,color=red,dashed] (31.0,-36.) node[left]{} -- (31.,31.) node[right]{};   % Cosmos vertical line
+\draw [-,color=blue,dashed] (-28.0,-31.) node[left]{} -- (-28.,-28.) node[right]{};   % String vertical line
+\draw [-,color=blue,dashed] (-20.0,-31.) node[left]{} -- (-20.,-20.) node[right]{};   % Gluon vertical line
+\draw [-,color=blue,dashed] (-12.0,-31.) node[left]{} -- (-12.,-12.) node[right]{};   % ATOM DIAMETER vertical line
+\draw [-,color=blue,dashed] (-10.0,-31.) node[left]{} -- (-10.,-10.) node[right]{};   % Kaon vertical line
+\draw [-,color=blue,dashed] (-4.0,-31.) node[left]{} -- (-4.,-4.) node[right]{};   % Half Mean Weak Boson vertical line
+\draw [-,color=blue,dashed] (-3.0,-29.) node[left]{} -- (-3.,-3.) node[right]{};   % Scalar Boson vertical line
+\draw [-,color=blue,dashed] (0.,-31.) node[left]{} -- (0.,0.) node[right]{};   % Bicodon vertical line
+\draw [-,color=blue,dashed] (4.1,-31.) node[left]{} -- (4.1,4.1) node[right]{};   % Thermal Photon vertical line
+\draw [-,color=blue,dashed] (12.1,-31.) node[left]{} -- (12.1,12.1) node[right]{};   % Boson X GUT vertical line
+\draw [-,color=blue,dashed] (16.,-31.) node[left]{} -- (16.,16.) node[right]{};   % Photon vertical line
+\draw [-,color=blue,dashed] (18.25,-29.) node[left]{} -- (18.25,18.25) node[right]{};   % Galaxy group vertical line
+\draw [-,color=blue,dashed] (20.0,-31.) node[left]{} -- (20.0,20.) node[right]{};   % Gravitonde vertical line
+\draw [-,color=blue,dashed] (28.0,-31.) node[left]{} -- (28.0,28.0) node[right]{};   % Super Period vertical line
+\draw [-,color=blue,dashed] (29.,-29.) node[left]{} -- (29.,29.0) node[right]{};   % Topon vertical line
+\draw [-,color=red,dashed] (31.0,-35.) node[left]{} -- (31.,31.) node[right]{};   % Cosmos vertical line
 %\draw[blue, dotted]
 %      let \p1 =  ($(B)-(center)$),
 %          \n0 = {veclen(\x1,\y1)}
@@ -102,9 +113,10 @@
 %\draw[color=red] (-1.42,0.) -- (5.,3.43);
 \draw[color=blue] (A) -- (Y);
 \node [anchor = text=blue] at (-8.,35.75) {\Large{TOPOLOGICAL AXIS}};
-\node [anchor = text=black] at (-6.,33.75) {\tiny{Caracteristics length follow the law: $exp(2^{d/4})$}};
-\node [anchor = text=black] at (-10.,32.75) {\tiny{Unit length: electron Compton reduced wavelength $\hbar m_e c=\lambdabar_e$}};
-\node [anchor = text=black] at (-12.,31.75) {\tiny{Super Period unit: $\lambdabar_e/c$. Photonde and Gravitonde masses unit: $2\pi m_N$}};
+\node [anchor = text=black] at (-8.,33.75) {\small{Caracteristics length follow the law: $exp(2^{d/4})$}};
+\node [anchor = text=black] at (-11.,32.75) {\small{Unit length: electron Compton reduced wavelength $\hbar m_e c=\lambdabar_e$}};
+\node [anchor = text=black] at (-13.,31.75) {\small{Super Period unit: $\lambdabar_e/c$. Photonde and Gravitonde masses unit: $2\pi m_N$}};
+\node [anchor = text=black] at (-28.,-38.0) {\small{Dimensional numbers in the Bosonic string theory: $d=4k+2$ from k=0 to k=7 (Bott sequence)}};
 \node [anchor = east,text=red] at (31.75,31.75) {\Large{COSMOS}};
 \node [anchor = south] at (-28.,-33.0) {$2$};
 \node [anchor = south] at (-28.,-36.0) {$0$};
@@ -130,8 +142,8 @@
 \node [anchor = west,color=black!40!green] at (0.,0.0) {$\times$ $\phi_9^2$};
 \node [anchor = south] at (4.25,-33.0) {$18$};
 \node [anchor = south] at (4.25,-36.0) {$4$};
-\node [cross,anchor = west,color=red] at (4.25,4.25){THERMAL PHOTON: $\hbar c/2k$};
-\node [cross,anchor = west,color=red] at (3.25,3.25){T=2.73 Kelvin $\approx T_{mam}/j$};
+\node [cross,anchor = west,color=red] at (4.25,4.25){THERMAL PHOTON: $\hbar c/2k_B$};
+\node [cross,anchor = west,color=red] at (3.15,3.15){T=2.73 Kelvin $\approx T_{mam}/j$};
 \node [anchor = south] at (12.25,-33.0) {$22$};
 \node [anchor = south] at (12.25,-36.0) {$5$};
 \node [anchor = east,color=black] at (12.25,12.250){BOSON $X_{GUT}:2.3 \times 10^{16}$GeV};
@@ -145,9 +157,9 @@
 \node [anchor = east,color=black!40!green] at (28.25,28.250){$Super Period$};
 \node [anchor = east,color=black] at (29.25,29.250){$TOPON$\tiny{:Visible universe wavelength}};
 \node [anchor = east,color=black] at (-8.25,24.250){\LARGE{MICROPHYSICS}};
-\node [anchor = east,color=black] at (-8.25,22.250){$Y=\ln\ln(\lambdabar_e(n)/\lambdabar_{MICRO})$};
+\node [anchor = east,color=black] at (-8.25,22.250){$Y=(\lambdabar_e(n)/\lambdabar_{MICRO})$};
 \node [anchor = east,color=red] at (22.25,-20.250){\LARGE{MACROPHYSICS}};
-\node [anchor = east,color=red] at (22.25,-22.250){$Y=\ln\ln(\lambdabar_{MACRO}(n)/\lambdabar_{e})$};
+\node [anchor = east,color=red] at (22.25,-22.250){$Y=(\lambdabar_{MACRO}(n)/\lambdabar_{e})$};
 \node [anchor = south] at (20.25,-33.0) {$26$};
 \node [anchor = south] at (20.25,-36.0) {$6$};
 \node [anchor = south] at (28.25,-33.0) {$30$};
@@ -165,6 +177,7 @@
 \node [anchor = north] at (-31.55, 16.0) {$4$};
 \node [anchor = north] at (-31.55, 26.0) {$5$};
 \node [anchor = north] at (-31.55, 32.4) {$2e$};
+\node [anchor = north] at (-29.0,36.0) {$y=\ln\ln(Y)$};
 %%% Y' AXIS
 \node [anchor = north] at (-34.25,-31.0) {$e$};
 \node [anchor = north] at (-34.25,-20.0) {$10$};
@@ -174,7 +187,7 @@
 \node [anchor = north] at (-34.25,12.0) {$10^{20}$};
 \node [anchor = north] at (-34.25,20.0) {$10^{40}$};
 \node [anchor = north] at (-34.25,28.0) {$10^{80}$};
-\node [anchor = north] at (-34.25,36.0) {$Y=\ln\ln(y)$};
+\node [anchor = north] at (-34.25,36.0) {$Y$};
 %% SLOPE
 \tkzLabelSegment[sloped,below,text=black](A,D){Slope $\ln(2)/4$}
 \end{tikzpicture}
