@@ -16,3 +16,4 @@ A latex doc representing the Topological Axis of MICRO and MACRO Physics; format
 3. Edit and render the source from the following 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LaGuer/topological-axis/master)
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/LaGuer/topological-axis/master?urlpath=lab%2Ftree%2Ftopological-axis.ipynb)
+[![nbviewer](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.jupyter.org/github/LaGuer/topological-axis/blob/master/topological-axis.ipynb)
