@@ -1,93 +1,49 @@
 
-\documentclass[a4paper,9pt]{article}
-%\documentclass{aa}
+\documentclass[a4paper]{article}
 %\pgfplotsset{compat=1.12}
-\usepackage{conference}
+%\usepackage{conference}
 \usepackage{latexsym}
 \usepackage[perpage,symbol*]{footmisc}
-%\usepackage[utf8]{inputenc}
 \usepackage[utf8x]{inputenc}
-\usepackage{textcomp}
 \usepackage[english]{babel}
 \usepackage{amssymb,amsfonts,amsmath}
 \usepackage{xcolor}
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
-\usepackage{tikz-feynman}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 \usepackage{cite}
 \usepackage{hyperref}
 \usepackage[varg]{txfonts}
-\usepackage{booktabs}       
-\usepackage{tabularx}
-\usepackage{enumerate}
-
-\usepackage{multicol}
-
-\usepackage{etoolbox}
-
-\usetikzlibrary{patterns,arrows.meta,shapes,calc,angles,positioning,intersections,through,quotes,decorations.markings,shadows.blur,decorations.pathreplacing}
-\tdplotsetmaincoords{70}{110}
+\usepackage[T1]{fontenc}                   % Font encoding
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+%%%%%%
+%%%%%%
+\usetikzlibrary{patterns,arrows.meta,shapes,calc,angles,positioning,intersections,through,quotes,decorations.markings}
+%\tdplotsetmaincoords{70}{110}
 \usepackage{tkz-euclide}
 \usetkzobj{all}
+%%%%%%%
 \def\doubleunderline#1{\underline{\underline{#1}}}
-\newcounter{row}
-\newcounter{col}
-\newcommand\setrow[9]{
-  \setcounter{col}{1}
-  \foreach \n in {#1, #2, #3, #4, #5, #6, #7, #8, #9} {
-    \edef\x{\value{col} - 0.5}
-    \edef\y{9.5 - \value{row}}
-    
-    \node[anchor=center] at (\x, \y) {\n};
-    \stepcounter{col}
-  }
-  \stepcounter{row}
-}
+%%%%%%%
+%%%%%%%
 
-\tikzset{%
-        brace/.style = { decorate, decoration={brace, amplitude=5pt} },
-       mbrace/.style = { decorate, decoration={brace, amplitude=5pt, mirror} },
-        label/.style = { black, midway, scale=0.5, align=center },
-     toplabel/.style = { label, above=.5em, anchor=south },
-    leftlabel/.style = { label,rotate=-90,left=.5em,anchor=north },   
-  bottomlabel/.style = { label, below=.5em, anchor=north },
-        force/.style = { rotate=-90,scale=0.4 },
-        round/.style = { rounded corners=2mm },
-       legend/.style = { right,scale=0.4 },
-        nosep/.style = { inner sep=0pt },
-   generation/.style = { anchor=base }
-}
-
-\newcommand\particle[7][white]{%
-  \begin{tikzpicture}[x=1cm, y=1cm]
-    \path[fill=#1,blur shadow={shadow blur steps=5}] (0.1,0) -- (0.9,0)
-        arc (90:0:1mm) -- (1.0,-0.9) arc (0:-90:1mm) -- (0.1,-1.0)
-        arc (-90:-180:1mm) -- (0,-0.1) arc(180:90:1mm) -- cycle;
-    \ifstrempty{#7}{}{\path[fill=purple!50!white]
-        (0.6,0) --(0.7,0) -- (1.0,-0.3) -- (1.0,-0.4);}
-    \ifstrempty{#6}{}{\path[fill=green!50!black!50] (0.7,0) -- (0.9,0)
-        arc (90:0:1mm) -- (1.0,-0.3);}
-    \ifstrempty{#5}{}{\path[fill=orange!50!white] (1.0,-0.7) -- (1.0,-0.9)
-        arc (0:-90:1mm) -- (0.7,-1.0);}
-    \draw[\ifstrempty{#2}{dashed}{black}] (0.1,0) -- (0.9,0)
-        arc (90:0:1mm) -- (1.0,-0.9) arc (0:-90:1mm) -- (0.1,-1.0)
-        arc (-90:-180:1mm) -- (0,-0.1) arc(180:90:1mm) -- cycle;
-    \ifstrempty{#7}{}{\node at(0.825,-0.175) [rotate=-45,scale=0.2] {#7};}
-    \ifstrempty{#6}{}{\node at(0.9,-0.1)  [nosep,scale=0.17] {#6};}
-    \ifstrempty{#5}{}{\node at(0.9,-0.9)  [nosep,scale=0.2] {#5};}
-    \ifstrempty{#4}{}{\node at(0.1,-0.1)  [nosep,anchor=west,scale=0.25]{#4};}
-    \ifstrempty{#3}{}{\node at(0.1,-0.85) [nosep,anchor=west,scale=0.3] {#3};}
-    \ifstrempty{#2}{}{\node at(0.1,-0.5)  [nosep,anchor=west,scale=1.5] {#2};}
-  \end{tikzpicture}
-}
-
-
+%% Begin of Watermark feature
+%\usepackage[printwatermark]{xwatermark}
+%\usepackage{xcolor}
+%\newwatermark[allpages,color=red!50,angle=60,scale=6,xpos=0,ypos=0]{DRAFT}
+%\newwatermark[allpages,color=red!20,angle=60,scale=2,xpos=0,ypos=0]{For Peer Review}
+%% End of Watermark feature
 
 \begin{document}
 
-
+\title{Topological Axis in Macro and Micro \emph{physics}}
 
 
 \begin{table}
