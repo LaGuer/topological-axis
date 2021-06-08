@@ -11,7 +11,10 @@ A latex doc representing the Topological Axis of MICRO and MACRO Physics; format
 | Latex Doc Type                |      "*.sty"                 |        "*.tex"              |      Compile in PDF                                                                                                                                    |
 | ----------------------------- |:----------------------------:|:---------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |topological-axis pdf generation  |[conference.sty](conference.sty)| [topological-axis](topological-axis.tex )       |[latexonline.cc topological-axis.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Ftopological-axis&target=topological-axis.tex&command=pdflatex)      |
+|axe-topologique-fr.tex pdf generation  |[conference.sty](conference.sty)| [axe-topologique-fr.tex](axe-topologique-fr.tex )       |[latexonline.cc axe-topologique-fr.tex](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Ftopological-axis&target=axe-topologique-fr.tex&command=pdflatex)      |
 |topological-axis PDF generation testing  |[conference.sty](conference.sty)| [topological-axis](topological-axis.tex )       |[latexonline.cc topological-axis](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FLaGuer%2Ftopological-axis&target=topological-axis.tex&command=pdflatex)      |
+
+axe-topologique-fr.tex
 
 3. Edit and render the source from the following 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LaGuer/topological-axis/master)
